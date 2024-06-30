@@ -1,1 +1,0 @@
-{"mappings":"AAEAA,QAAQC,IAFG","sources":["src/index.js"],"sourcesContent":["const go = 2;\n\nconsole.log(go);\n"],"names":["console","log"],"version":3,"file":"index.f9b3a2d9.js.map"}
