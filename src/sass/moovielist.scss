@@ -1,0 +1,308 @@
+.galleryPopular .info-title,
+.galleryPopular {
+  color: #000;
+}
+
+body {
+  background-color: #fff;
+}
+
+body[data-theme='dark'] .galleryPopular .info-title,
+body[data-theme='dark'] .galleryPopular {
+  color: #fff;
+}
+
+body[data-theme='dark'] {
+  background-color: #333;
+}
+
+.galleryPopular {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+body[data-theme='dark'] .galleryLibrary .info-title,
+body[data-theme='dark'] .galleryLibrary {
+  color: #fff;
+}
+
+.div-poster {
+  transition: transform 0.3s;
+}
+
+.div-poster:hover {
+  transform: scale(1.05);
+}
+
+.poster-card {
+  width: 395px;
+  height: 574px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.poster-card img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.info-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 8px;
+  margin-top: -4px;
+  padding-left: 25px;
+  text-wrap: wrap;
+  width: 350px;
+}
+
+.info-genre-year {
+  color: #b92f2c;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: -8px;
+  text-wrap: wrap;
+  padding-left: 25px;
+  width: 350px;
+}
+
+.galleryPopular {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.div-poster {
+  transition: transform 0.3s;
+}
+
+.div-poster:hover {
+  transform: scale(1.05);
+}
+
+.poster-card {
+  width: 395px;
+  height: 574px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.poster-card img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.info-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 8px;
+  margin-top: -4px;
+}
+
+.info-genre-year {
+  color: #b92f2c;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: -8px;
+}
+
+.cards-modal-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.cards-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+
+.cards-modal-close-button {
+  color: #aaa;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
+
+.cards-modal-close-button:hover,
+.cards-modal-close-button:focus {
+  color: #b92f2c;
+  text-decoration: none;
+}
+
+.cards-modal-poster-card {
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 50%;
+}
+
+.cards-modal-div-info {
+  text-align: left;
+  width: 100%;
+}
+
+.cards-modal-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.cards-modal-details span.label {
+  color: #8c8c8c;
+  margin-bottom: 2px;
+}
+
+.cards-modal-details span.value {
+  font-size: 16px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.cards-modal-details span.value:hover {
+  background: #b92f2c;
+  color: white;
+}
+
+.cards-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #000;
+}
+
+.cards-modal-about {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-modal-about .label {
+  font-size: 16px;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cards-modal-about .value {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.cards-modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cards-modal-button {
+  color: #b92f2c;
+  background-color: white;
+  text-align: center;
+  line-height: normal;
+  display: flex;
+  padding: 14px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #000;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.cards-modal-button.watch:hover {
+  background-color: #b92f2c;
+  border: none;
+  color: white;
+  padding: 14px 32px;
+}
+
+.cards-modal-button.queue:hover {
+  background-color: #b92f2c;
+  border: none;
+  color: white;
+  padding: 14px 32px;
+}
+
+.cards-modal-button.remove {
+  background-color: #b92f2c;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .cards-modal-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .cards-modal-poster-card {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .cards-modal-title {
+    font-size: 14px;
+  }
+}

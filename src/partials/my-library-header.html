@@ -1,0 +1,99 @@
+<header class="header">
+  <div class="carousel">
+    <div class="container">
+      <nav class="nav-left">
+        <button class="home-btn" onclick="location.href='index.html'">
+          Home
+        </button>
+        <button class="library-btn" onclick="location.href='my-library.html'">
+          My Library
+        </button>
+      </nav>
+      <nav class="nav-right">
+        <button class="watched-btn">Watched</button>
+        <button class="queue-btn">Queue</button>
+      </nav>
+      <div>
+        <button
+          class="theme-toggle dark-library"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          aria-label="auto"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="#000"
+            />
+            <g class="sun-beams" stroke="#000">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="logo-container">
+        <span class="logo-text">
+          <a class="filmoteka-library" href="/src/index.html"
+            ><img
+              class="logo"
+              src="/src/images/logo.png"
+              alt="logo"
+            />Filmoteka</a
+          >
+        </span>
+      </div>
+    </div>
+    <img
+      class="header-red carousel-img active"
+      src="/src/images/header-image/red-cover.jpg"
+      alt="red"
+    />
+    <img
+      class="header-orange carousel-img"
+      src="/src/images/header-image/orange-cover.jpg"
+      alt="orange"
+    />
+    <img
+      class="header-yellow carousel-img"
+      src="/src/images/header-image/yellow-cover.png"
+      alt="yellow"
+    />
+    <img
+      class="mobile-carousel-img active"
+      src="/src/images/header-image/image-red-responsive.png"
+      alt="red"
+    />
+    <img
+      class="mobile-carousel-img"
+      src="/src/images/header-image/image-orange-responsive.png"
+      alt="orange"
+    />
+    <img
+      class="mobile-carousel-img"
+      src="/src/images/header-image/image-yellow-responsive.png"
+      alt="yellow"
+    />
+  </div>
+</header>

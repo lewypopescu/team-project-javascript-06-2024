@@ -1,0 +1,164 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 28px 0;
+
+  align-items: baseline;
+  background-color: #f7f7f7;
+
+  &__container {
+    display: contents;
+
+    flex-direction: column;
+    flex: 0 1 320px;
+  }
+  &__text {
+    color: #545454;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.students-link {
+  text-decoration: underline;
+  color: #545454;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.students-link:hover {
+  cursor: pointer;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-Group {
+  width: 1.0771484375em;
+}
+.svg-close {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundal semitransparent */
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.modal-content {
+  width: 40%;
+  background-color: #212529; /* Fundal negru */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modal-header {
+  color: #ffc107;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 768px) {
+  .modal-header {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+.modal-header:hover {
+  filter: drop-shadow(0 0 0.75rem #ffc107);
+}
+@media screen and (max-width: 428px) {
+  .modal-list {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-list {
+    font-size: 16px;
+  }
+}
+
+.modal-list {
+  list-style: none;
+  padding: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 15px;
+}
+.social-class {
+  margin-bottom: 15px;
+}
+.inlink {
+  color: #ffc107; /* Linkuri portocalii */
+  text-decoration: none;
+}
+.inlink:hover {
+  filter: drop-shadow(0 0 0.75rem #ffc107);
+}
+.inlink svg {
+  fill: #ffc107; /* Iconițe portocalii */
+}
+.close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.close:hover {
+  filter: drop-shadow(0 0 0.75rem #ffc107);
+}
+.svg-close {
+  fill: #ffc107; /* Iconiță de închidere portocalie */
+}
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    display: block;
+    margin-left: 65px;
+  }
+  .rights-reserved {
+    margin-left: 23px;
+  }
+}
